@@ -1,0 +1,9 @@
+{
+  "name": "seamless_search",
+  "version": "1.0.0",
+  "description": "a basic google search clone",
+  "main": "index.js",
+  "repository": "git@github.com:KaiserPhemi/seamless_search.git",
+  "author": "KaiserPhemi <kaiser.phemi@protonmail.ch>",
+  "license": "MIT"
+}
