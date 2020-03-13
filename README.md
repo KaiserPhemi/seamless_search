@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/KaiserPhemi/seamless_search/badge.svg?branch=master)](https://coveralls.io/github/KaiserPhemi/seamless_search?branch=master)
+
 # seamless_search
 
 A basic Google search clone
