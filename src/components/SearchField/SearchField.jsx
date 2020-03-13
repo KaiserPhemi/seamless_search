@@ -36,6 +36,8 @@ const SearchField = () => {
     );
     const countries = await data.json();
     setCountries([...countries]);
+
+    return <Redirect to="/result" />;
   };
 
   return (

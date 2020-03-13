@@ -10,9 +10,10 @@ import "./_suggestions.scss";
 const Suggestions = ({ resultArr }) => {
   return (
     <div className="list-wrapper">
-      {resultArr.map((country, index) => (
-        <div key={index}>{country.name}</div>
-      ))}
+      {resultArr &&
+        resultArr.map((country, index) => (
+          <div key={index}>{country.name}</div>
+        ))}
     </div>
   );
 };
