@@ -11,8 +11,8 @@ import Footer from "./Footer";
 // test suites
 describe("Footer component", () => {
   const wrapper = shallow(<Footer />);
-  it("should render the two divs", () => {
+
+  it("should render footer container", () => {
     expect(wrapper.find(".def-layout")).to.exist;
-    // expect(wrapper.find("div")).to.have.lengthOf(2);
   });
 });

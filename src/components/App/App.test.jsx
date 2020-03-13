@@ -12,5 +12,12 @@ import App from "../App/App";
 describe("App component", () => {
   const wrapper = shallow(<App />);
 
-  it("should render child components", () => {});
+  it("should render main container", () => {
+    expect(wrapper.find(".main-app")).to.exist;
+  });
+
+  it("should render child components", () => {
+    expect(wrapper.find(".navbar")).to.exist;
+    expect(wrapper.find(".page-footer")).to.exist;
+  });
 });
