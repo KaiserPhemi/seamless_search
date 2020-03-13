@@ -4,6 +4,7 @@ import React from "react";
 // components
 import Doodle from "../Doodle/Doodle";
 import SearchField from "../SearchField/SearchField";
+import LanguageOptions from "../LanguageOptions/LanguageOptions";
 
 // styles
 import "./_home-page.scss";
@@ -16,7 +17,7 @@ const HomePage = () => {
     <div className="main-page">
       <Doodle />
       <SearchField />
-      {/* search buttons */}
+      <LanguageOptions />
       {/* language options */}
     </div>
   );

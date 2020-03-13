@@ -17,11 +17,16 @@ module.exports = {
         exclude: /node_modules/,
         use: { loader: "babel-loader" }
       },
-      { test: /\.scss$/, loader: ["style-loader", "css-loader", "sass-loader"] }
+      {
+        test: /\.scss$/,
+        loader: ["style-loader", "css-loader", "sass-loader"]
+      },
+      { test: /\.(jpe?g|png|gif|ico)$/i, loader: "file?name=[name].[ext]" }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: "src/assets/favicon.ico",
       template: "./src/index.html",
       hash: true
     }),

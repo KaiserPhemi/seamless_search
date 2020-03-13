@@ -1,0 +1,16 @@
+.lang-options {
+  margin: 10px 0;
+  font-size: 13px;
+
+  .option-text {
+    padding: 5px;
+  }
+
+  .link-items {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
