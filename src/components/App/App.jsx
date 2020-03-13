@@ -17,7 +17,7 @@ const App = () => {
     <div className="main-app">
       <Header />
       <HomePage />
-      <Footer />
+      <Footer userLocation="Nigeria" />
     </div>
   );
 };

@@ -1,15 +1,18 @@
 // react libraries
 import React from "react";
 
+// styles
+import "./_footer.scss";
+
 /**
  * @desc footer of the page
  */
-const Footer = () => {
+const Footer = ({ userLocation }) => {
   return (
     <div className="page-footer">
-      <div>Nigeria</div>
-      <div>
-        <div>
+      <div className="def-layout user-location-container">{userLocation}</div>
+      <div className="def-layout useful-link-container">
+        <div className="about-links">
           <a href="#">
             <span>Advertising</span>
           </a>
@@ -23,7 +26,7 @@ const Footer = () => {
             <span>How Search Works</span>
           </a>
         </div>
-        <div>
+        <div className="settings-link">
           <a href="#">
             <span>Privacy</span>
           </a>
