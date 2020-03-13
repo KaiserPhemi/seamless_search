@@ -7,8 +7,9 @@
   "author": "KaiserPhemi <kaiser.phemi@protonmail.ch>",
   "license": "MIT",
   "scripts": {
+    "start": "pm2 start server.js",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --open",
     "test": "jest",
     "coverage": "jest --coverageReporters=text-lcov | coveralls"
   },
@@ -32,6 +33,8 @@
   },
   "dependencies": {
     "css-loader": "^3.4.2",
+    "express": "^4.17.1",
+    "pm2": "^4.2.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "sass-loader": "^8.0.2",

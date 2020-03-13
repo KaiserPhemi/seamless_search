@@ -1,0 +1,40 @@
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: auto;
+
+  .search-query {
+    width: 30vw;
+    height: 2rem;
+    margin: 20px 0;
+    // border: none;
+    padding: 5px;
+
+    &:focus {
+      border: none;
+    }
+  }
+
+  .btn-wrapper {
+    align-self: center;
+
+    .form-btn {
+      background-color: #f6f6f6;
+      border: none;
+      border-radius: 4px;
+      color: #9a9a9a;
+      cursor: pointer;
+      font-weight: 500;
+      height: 2rem;
+      margin: 5px;
+      text-align: center;
+      width: 8rem;
+
+      &:hover {
+        border: 1px solid #8f8f8f;
+        color: #0f0f0f;
+      }
+    }
+  }
+}
