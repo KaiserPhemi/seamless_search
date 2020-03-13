@@ -10,9 +10,14 @@ import "./_search-form.scss";
 const SearchField = () => {
   return (
     <form className="search-form">
-      <label htmlFor="">
-        <span />
+      <label className="input-wrapper">
+        <span>
+          <i className="fa fa-search" aria-hidden="true" />
+        </span>
         <input type="text" className="search-query" />
+        <span>
+          <i className="fa fa-microphone" aria-hidden="true" />
+        </span>
         <span />
       </label>
       <div className="btn-wrapper">

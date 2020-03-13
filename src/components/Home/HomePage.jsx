@@ -18,7 +18,6 @@ const HomePage = () => {
       <Doodle />
       <SearchField />
       <LanguageOptions />
-      {/* language options */}
     </div>
   );
 };
