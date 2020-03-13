@@ -1,0 +1,16 @@
+.navbar {
+  .navbar-item {
+    .nav-link {
+      text-decoration: none;
+      color: #434343;
+
+      :hover {
+        text-decoration: underline;
+      }
+
+      span {
+        padding: 5px;
+      }
+    }
+  }
+}

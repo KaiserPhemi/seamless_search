@@ -2,8 +2,8 @@
 import React from "react";
 
 // components
-import Doodle from "../components/Doodle";
-import SearchField from "../components/SearchField";
+import Doodle from "../Doodle/Doodle";
+import SearchField from "../SearchField/SearchField";
 
 /**
  * @desc home page
