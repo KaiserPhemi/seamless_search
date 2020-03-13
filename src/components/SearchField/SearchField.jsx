@@ -41,16 +41,23 @@ const SearchField = () => {
   return (
     <form className="search-form" onSubmit={getResult}>
       <label className="input-wrapper">
-        <span>
-          <i className="fa fa-search" aria-hidden="true" />
-        </span>
-        <input type="text" className="search-query" onChange={handleChange} />
-        <span>
-          <i className="fa fa-microphone" aria-hidden="true" />
-        </span>
-        <span />
+        <div className="field-wrapper">
+          <span>
+            <i className="fa fa-search" aria-hidden="true" />
+          </span>
+          <input
+            type="text"
+            value={searchQuery}
+            className="search-query"
+            placeholder="Search for countries"
+            onChange={handleChange}
+          />
+          <span>
+            <i className="fa fa-microphone" aria-hidden="true" />
+          </span>
+        </div>
+        <Suggestions resultArr={countryList} />
       </label>
-      <Suggestions resultArr={} />
       <div className="btn-wrapper">
         <input type="submit" value="Google Search" className="form-btn" />
         <input type="submit" value="I'm Feeling Lucky" className="form-btn" />
