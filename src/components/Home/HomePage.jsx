@@ -5,12 +5,15 @@ import React from "react";
 import Doodle from "../Doodle/Doodle";
 import SearchField from "../SearchField/SearchField";
 
+// styles
+import "./_home-page.scss";
+
 /**
  * @desc home page
  */
 const HomePage = () => {
   return (
-    <div>
+    <div className="main-page">
       <Doodle />
       <SearchField />
       {/* search buttons */}
