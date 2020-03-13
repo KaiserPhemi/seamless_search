@@ -16,4 +16,8 @@ describe("SearchField component", () => {
     expect(wrapper.find(".search-form")).to.exist;
     expect(wrapper.find("form")).to.exist;
   });
+
+  it("should render the input field", () => {
+    expect(wrapper.find(".search-query")).to.exist;
+  });
 });

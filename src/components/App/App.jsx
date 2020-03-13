@@ -16,16 +16,16 @@ import "./main.scss";
  */
 const App = () => {
   return (
-    <div className="main-app">
-      <Router>
+    <Router>
+      <div className="main-app">
         <Header />
         <Switch>
-          <Route path="/" exact component={HomePage} />
+          <Route exact path="/" component={HomePage} />
           <Route path="/result" component={SearchResults} />
         </Switch>
         <Footer userLocation="Nigeria" />
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 };
 

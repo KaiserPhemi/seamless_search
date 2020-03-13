@@ -9,7 +9,7 @@ import Suggestions from "./Suggestions";
 /**
  * @desc container holding the input field
  */
-const SearchField = () => {
+const SearchField = props => {
   const [searchQuery, setQuery] = useState("");
   const [countryList, setCountries] = useState([]);
 
@@ -35,8 +35,9 @@ const SearchField = () => {
       `https://restcountries.eu/rest/v2/name/${searchQuery}`
     );
     const countries = await data.json();
-    setCountries([...countries]);
-
+    if (countries && countries.length > 0) {
+      setCountries([...countries]);
+    }
     return <Redirect to="/result" />;
   };
 
@@ -58,7 +59,7 @@ const SearchField = () => {
             <i className="fa fa-microphone" aria-hidden="true" />
           </span>
         </div>
-        <Suggestions resultArr={countryList} />
+        {/* <Suggestions resultArr={countryList} /> */}
       </label>
       <div className="btn-wrapper">
         <input type="submit" value="Google Search" className="form-btn" />
