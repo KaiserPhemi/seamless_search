@@ -18,7 +18,7 @@ const Header = () => {
           <span>Images</span>
         </a>
       </nav>
-      <button>Sign In</button>
+      <button className="login-btn">Sign In</button>
     </div>
   );
 };
