@@ -2,6 +2,11 @@
   width: 30vw;
   margin: 5rem 0 5rem 12rem;
   cursor: pointer;
+  padding: 10px;
+
+  &:hover {
+    border: 1px solid #ddd;
+  }
 
   .source-url {
     font-size: 0.75rem;

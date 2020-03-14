@@ -1,39 +1,51 @@
 .navbar {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 4rem;
   position: fixed;
   top: 0;
   width: 100vw;
 
-  .navbar-item {
-    font-size: 13px;
-
-    .nav-link {
-      text-decoration: none;
-      color: #434343;
-
-      :hover {
-        text-decoration: underline;
-      }
-
-      span {
-        padding: 8px;
-      }
-    }
+  .navbar-doodle {
+    background: no-repeat center/80%
+      url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+    width: 10vw;
+    height: 10vh;
   }
 
-  .login-btn {
-    background-color: #4684ee;
-    border: none;
-    border-radius: 2px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 700;
-    height: 2rem;
-    margin-right: 20px;
-    width: 4.5rem;
+  .nav-menu {
+    align-items: center;
+    display: flex;
+
+    .navbar-item {
+      font-size: 13px;
+
+      .nav-link {
+        text-decoration: none;
+        color: #434343;
+
+        :hover {
+          text-decoration: underline;
+        }
+
+        span {
+          padding: 8px;
+        }
+      }
+    }
+
+    .login-btn {
+      background-color: #4684ee;
+      border: none;
+      border-radius: 2px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      height: 2rem;
+      margin-right: 20px;
+      width: 4.5rem;
+    }
   }
 }

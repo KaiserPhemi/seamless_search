@@ -1,6 +1,6 @@
 // react libraries
 import React, { useState, useEffect } from "react";
-import { Redirect, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // styles
 import "./_search-form.scss";
@@ -12,6 +12,7 @@ import Suggestions from "./Suggestions";
 const SearchField = props => {
   const [searchQuery, setQuery] = useState("");
   const [countryList, setCountries] = useState([]);
+  const [isVisible, setView] = useState(false);
 
   /**
    * @desc updates the state with user input
@@ -38,7 +39,7 @@ const SearchField = props => {
     if (countries && countries.length > 0) {
       setCountries([...countries]);
     }
-    <Redirect to="/result" />;
+    setView(true);
   };
 
   return (
@@ -62,7 +63,7 @@ const SearchField = props => {
         {/* <Suggestions resultArr={countryList} /> */}
       </label>
       <div className="btn-wrapper">
-        <Link to={{ pathname: "/result", state: countryList }}>
+        <Link to={{ pathname: "/result", state: { countryList, isVisible } }}>
           <input type="submit" value="Google Search" className="form-btn" />
         </Link>
         <input type="submit" value="I'm Feeling Lucky" className="form-btn" />

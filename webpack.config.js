@@ -11,6 +11,7 @@ module.exports = {
     filename: "[name].[hash].js",
     path: path.resolve(__dirname, "dist")
   },
+  devtool: process.env.NODE_ENV === "development" ? "source-map" : "eval",
   module: {
     rules: [
       {

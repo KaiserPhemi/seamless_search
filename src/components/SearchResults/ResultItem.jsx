@@ -16,7 +16,9 @@ const ResultItem = ({ country, index }) => {
       <div className="result-title">{country.name}</div>
       <div className="result-description">
         {`${country.name} is a country in ${country.region}. 
-        It has a population of ${country.population} and it’s a member of ${country.regionalBlocs[0].name}. 
+        It has a population of ${
+          country.population
+        } and it’s a member of ${country.regionalBlocs[0].name || ""}. 
         Capital of ${country.name} is ${country.capital}`}
       </div>
     </div>

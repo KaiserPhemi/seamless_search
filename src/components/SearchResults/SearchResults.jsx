@@ -12,10 +12,12 @@ import "./_result-container.scss";
  */
 const SearchResults = props => {
   const data = props.location.state;
+  console.log(data);
+  const { countryList, isVisible } = data;
   return (
     <div className="result-list-container">
-      {data.length > 0 ? (
-        data.map((country, index) => (
+      {countryList.length > 0 ? (
+        countryList.map((country, index) => (
           <ResultItem country={country} index={index} />
         ))
       ) : (

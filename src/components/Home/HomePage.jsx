@@ -12,7 +12,7 @@ import "./_home-page.scss";
 /**
  * @desc home page
  */
-const HomePage = () => {
+const HomePage = props => {
   return (
     <div className="main-page">
       <Doodle />
